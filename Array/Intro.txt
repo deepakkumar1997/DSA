@@ -1,0 +1,2 @@
+>> Array is collection of similar data elements and elements of an array is stored
+   in contiguous memory location;

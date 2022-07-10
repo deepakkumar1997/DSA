@@ -1,0 +1,33 @@
+> A program is a set of instructions which perform operations on data so data is 
+  important part of a program withou it operations can't be performed;
+
+> So when a program dealing with the data and how it will organize the data in main
+  memory that is called data structure;
+
+> The way you organize the data in main memory during execution time of a program 
+  that is called data structure;
+
+> Type of data structure:
+
+    > Physical DS:
+        > Array
+        > Linked List
+
+    > Logical DS:
+        > Linear DS:
+            > Stack
+            > Queue
+        > Non-linear DS:
+            > Tree
+            > Graph
+        > Linear or Tabular DS:
+            > Hash Table
+
+> Physical data structures are used or actually meant for storing the data in memory;
+> How you are going to insert or delete data from these physical data structures is 
+  defined using these logical data structures and we call it a Discipline;
+  like LIFO is a discipline of Stack;
+> Logical data structures are implemented by using physical data structure;
+
+>> Difference between physics DS and logical DS:
+    > 
