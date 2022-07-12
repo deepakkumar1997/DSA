@@ -1,0 +1,27 @@
+***************************** {Pointer} **********************************
+> Pointer is an address variable which contains address of another variable of same
+  type;
+> Normal variables are data variables which contains data but pointers are address
+  variables which contains address of another variable of same type;
+
+> Pointers are used for accessing data indirectly;
+
+> Why we actually need pointers?
+> The policy of a program is that a program can directly access stack memory but not
+  heap memory; So heap memory is external or outside of the program, so program does
+  not directly access, and for that we needs pointer so one of the reason we need 
+  pointer to access heap memory in our program, and we all know that dynamic memory
+  is created in heap memory;
+> So a pointer variable exist in stack memory and it have address of data which is 
+  in heap memory;
+> So pointer is used to access the resources which is outside of the program and one
+  of them is resources in heap memory;
+> One more external resource is hard disk so getting data from hard disk we can use
+  pointers;
+> Heap memory, HDD, moniter, keyboard, network(internet) these are all external
+  resources so we can access all these using pointer;
+
+> So one major usage of pointer is accessing resources which is outside of the program;
+
+> Pointer is also used for parameter passing;
+

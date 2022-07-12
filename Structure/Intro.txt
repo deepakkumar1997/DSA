@@ -1,0 +1,7 @@
+>> Structure is collection of dissimilar elements.
+e.g.:-
+    struct Student{
+        int rollno;
+        string name;
+        string dept;
+    }
