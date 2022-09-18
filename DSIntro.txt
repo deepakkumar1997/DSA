@@ -1,0 +1,26 @@
+> Data is an integral(essential) part of our application or programs;
+> Program: It is a set of instructions which perform operations on data to get some
+           results;
+> So without data there is no need of or no use of an instruction;
+
+> What is data structure?
+> Data structure can be defined as arrangement of collection of data items so that 
+  they can be used efficiently; Operations on data can be done efficiently; So, 
+  It is all about arrangement of data and efficient operations on data;
+
+> But question is where we will do all these things like arrangement of data,
+  efficient operations on data?
+> So we'll all these things "Inside the main memory during execution of a program";
+> So every application will have set of instruction which can perform operations on
+  data so data is mandatory; Then where the data is kept "Inside the main memory"
+  where the programs will be "Inside the main memory";
+
+*> During execution of the program how the program manage the data inside the main
+   memory and perform the operations that is data structure;
+
+> Every program's instruction and data must brought into main memory in order of 
+  use it and while execting the application how data is arranged and how it is 
+  efficiently used that is called data structure;
+
+> Data structure is a part of running program;
+
