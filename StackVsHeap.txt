@@ -1,0 +1,63 @@
+> Memory is divided into smaller addressable unit that is called "byte" and every byte
+  has its address in the memory;
+> An main memory is divided into segement usually of 64byte;
+
+> How a program uses or utilizes main memory?
+  > An entire main memory segement is divided into three sections and used by a program;
+  > In this three sections in one of them program is loaded another two is called stack
+    memory and heap memory;
+  e.g.:
+  void main(){
+    int a; // 4 bytes (memory assigned in stack)
+    double b; // 8 bytes(memory assigned in stack)
+  }
+  > So here memory assigned to main() function is 12 byte and inside stack memory 12 
+    bytes of memory will be reserved as a separate frame for this main function and
+    this is called as "stack frame" or "Activation Record" of main function;
+
+> Static memory allocation: So how many memory is required to run the program is decided
+  at compile is called static memory allocation; 
+
+> Stack Memory:
+fun2(int i){
+    int j
+}
+fun1(){
+    int x;
+    fun2(x);
+}
+void main(){
+    int a;
+    float b;
+    fun1();
+}
+> So when we run this program then all these instructions will brought into the main 
+  memory and a segement of memory will be created for this program and then we know 
+  that a segement has three sections in one sections all instructions(code) resides
+  and then main() function will be executed first and then it will gets its 
+  activation record created and while executing main() function fun1() will be called
+  and fun1() will get his own activation record and while fun1() is executing then 
+  fun2() will called and fun2() will also gets his own activation record so when fun2()
+  gets executed then it will be released from the memory and then control will come back
+  to fun1() and when fun1() will get executed then control will go back to main() func
+  and fun1() will be released from memory and then main() will executed and it will be
+  released from memory and program ends;
+  > So this execution of program works like stack and thats why we call this memory as
+    stack memory;
+
+*> Every function call creates a new activation record at the top of calling function;
+
+> Heap Memory: Term heap can be used for organized thing as well as unorganize thing;
+> So heap is an unorganized memory;
+> Heap memory is treated as resource by a program so once it is used then release it so
+  other program can use these resources;
+> Program can not access heap memory directly. It can access stack but not heap as it is
+  treated as resource;
+> In cpp programs we can use pointer to access heap memory;
+e.g.:
+void main(){
+    int *p; // pointer p gets memory in stack;
+    p = new int[5]; // now pointer p will hold the address of the first block of the  
+                    // memory created in heap;
+    delete []p; // releasing memory explicitly in cpp but java do implicitly;
+}
