@@ -24,3 +24,27 @@
 
 > Data structure is a part of running program;
 
+> Types of data structures:
+    > Physical DS
+    > Logical DS 
+
+> Physical Data Structures:
+    > Array
+    > Linked List
+
+> Physical DS is actually meant for storing/holding the data in the memory;
+
+> Logical Data Structures:
+    > Linear DS:
+        > Stack (LIFO)
+        > Queues(FIFO)
+    > Non-linear DS:
+        > Trees
+        > Graph
+    > Linear or Tabular DS:
+        > Hash Tables 
+
+> Discipline means how you're going to insert the data, delete the data comes under these
+  logical data structures;
+> These logical data structures are implemented using physical data structures either 
+  array or linked list and somtimes both;
