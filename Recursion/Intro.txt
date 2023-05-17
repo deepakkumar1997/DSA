@@ -1,0 +1,25 @@
+> A function is calling itself then it is called a recursive function;
+> A recursion has two phases one is calling another one is returning;
+
+Prototype:
+
+Type fun(param){
+    if(<baseCondition>){
+        ...
+        fun(param); //recursive calls
+        ...
+    }
+}
+
+>> Working on a recursion code:
+
+void fun1(int n){
+    if(n>0){
+        printf("%d",n);
+        fun1(n-1);
+    }
+}
+void main(){
+    int x=3;
+    fun1(x);
+}

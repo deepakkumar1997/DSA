@@ -1,28 +1,28 @@
 > Data is an integral(essential) part of our application or programs;
-> Program: It is a set of instructions which perform operations on data to get some
+> Program: It is a set of instructions that perform operations on data to get some
            results;
-> So without data there is no need of or no use of an instruction;
+> So without data there is no need for or no use of an instruction;
 
 > What is data structure?
-> Data structure can be defined as arrangement of collection of data items so that 
+> Data structure can be defined as an arrangement of a collection of data items so that 
   they can be used efficiently; Operations on data can be done efficiently; So, 
-  It is all about arrangement of data and efficient operations on data;
+  It is all about the arrangement of data and efficient operations on data;
 
-> But question is where we will do all these things like arrangement of data,
+> But the question is where we will do all these things like the arrangement of data,
   efficient operations on data?
 > So we'll all these things "Inside the main memory during execution of a program";
-> So every application will have set of instruction which can perform operations on
+> So every application will have a set of instructions that can perform operations on
   data so data is mandatory; Then where the data is kept "Inside the main memory"
   where the programs will be "Inside the main memory";
 
-*> During execution of the program how the program manage the data inside the main
-   memory and perform the operations that is data structure;
+*> During the execution of the program how does the program manage the data inside the main
+   memory and perform the operations that are data structure;
 
-> Every program's instruction and data must brought into main memory in order of 
-  use it and while execting the application how data is arranged and how it is 
+> Every program's instruction and data must be brought into the main memory in order of 
+  use it and while executing the application how data is arranged and how it is 
   efficiently used that is called data structure;
 
-> Data structure is a part of running program;
+> Data structure is a part of running the program;
 
 > Types of data structures:
     > Physical DS
@@ -32,7 +32,7 @@
     > Array
     > Linked List
 
-> Physical DS is actually meant for storing/holding the data in the memory;
+> Physical DS is meant for storing/holding the data in the memory;
 
 > Logical Data Structures:
     > Linear DS:
@@ -47,4 +47,4 @@
 > Discipline means how you're going to insert the data, delete the data comes under these
   logical data structures;
 > These logical data structures are implemented using physical data structures either 
-  array or linked list and somtimes both;
+  array or linked list and sometimes both;

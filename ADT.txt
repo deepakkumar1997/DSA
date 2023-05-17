@@ -14,10 +14,10 @@
 > What is abstract?
 > Abstract means hiding internal details;
 
-> So in above example we've seen that on an integer data type many operation can be
-  perfomed and how integer data type is represented in memory but for performing
-  these operations to integer data type we don't need to know what's going behind
-  that details is hidden so that's it is called as abstract data type;
+> So in the above example we've seen that on an integer data type, many operations can be
+  performed and how integer data type is represented in memory but for performing
+  these operations to integer data type we don't need to know what's going on behind
+  that details are hidden so that it is called an abstract data type;
 
 > When you create a class and you've data representation and operations on data 
-  together then your class becomes a data type;
+  together then your class becomes an abstract data type;

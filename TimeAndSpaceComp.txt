@@ -1,9 +1,9 @@
 > Time complexity depends on what procedure you take to implement a task;
 
 > In an array for finding an element, inserting an element, deleting an element
-  searching an element time complexity is O(n) if array is of n-element;
+  searching an element, time complexity is O(n) if array is of n-element;
 
-> If an array of n element get divided by 2 like
+> If an array of n elements gets divided by 2 like
   for(int i=n; i>1; i=i/2){
     // statements
   }
@@ -15,10 +15,10 @@
 > If you're traversing all elements of a BT then TC will be O(n);
 
 >> Space Complexity:
-> Array if n-elements then O(n);
+> Array of n-elements then O(n);
 > Linked list if n-elements then 2n that is also O(n);
 > A 2D matrix take space of O(n^2);
-> A array or list of structure takes O(m+n);
+> A array or list of structures takes O(m+n);
 > A binary tree takes space of O(n);
 
 > TC and SC from program codes:
@@ -31,7 +31,7 @@ void swap(x,y){
     y = temp; //1
 }
 f(n) = 3
-so 3 is constant and degree of constant is 1 like
+so 3 is constant and the degree of constant is 1 like
 so n^0 is equal to 1;
 so O(n^0) = O(1) so function swap() will take constant time;
 
@@ -49,15 +49,15 @@ so TC of function sum is O(n);
 void Add(int n){
     int i,j;
     for(i=0; i<n; i++){ // n+1
-        for(j=0; j<n; j++){ // n*(n+1) becuase it will run n+1 times
-            c[i][j] = a[i][j]+b[i][j]; // n*n becuase it will run n times;
+        for(j=0; j<n; j++){ // n*(n+1) because it will run n+1 times
+            c[i][j] = a[i][j]+b[i][j]; // n*n because it will run n times;
         }
     }
 }
 f(n) = n+1+n*(n+1)+n*n = 2n^2+2n+1 and degree of this function is 2 so O(n^2);
 so TC of function Add()  is O(n^2);
 
-> So we take time complexity as highest degree of a function;
+> So we take time complexity as the highest degree of a function;
 
 fun1(){
     fun2(); //n+1
@@ -67,6 +67,6 @@ fun2(){
 
     }
 }
-What is time complexity of fun1()?
+What is the time complexity of fun1()?
 So fun2() will be called inside fun1() so tc for fun2() is O(n) and inside fun1() 
 fun2() is called so TC of fun1() is O(n);
