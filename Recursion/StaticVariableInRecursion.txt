@@ -1,0 +1,18 @@
+> Static variables are created in code-section or there is a sub-section inside code-section called a section for 
+  global or static variable;
+
+> Static variable in recursion:
+Example:
+
+int fun(int n){
+    static int x=0;
+    if(n>0){
+        x++;
+        return fun(n-1)+n;
+    }
+    return 0;
+}
+void main(){
+    int a=5;
+    printf("%d",fun(a));
+}
