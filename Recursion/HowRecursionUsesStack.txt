@@ -1,0 +1,28 @@
+> Model of memory: So memory is used by dividing it into three sections i.e. 
+    > Code Section 
+    > Stack 
+    > Heap
+
+Example:
+
+void fun1(int n){
+    if(n>0){
+        printf("%d",n);
+        fun1(n-1);
+    }
+}
+void main(){
+    int n=3;
+    fun1(n);
+}
+
+> Here in this example, when we will use this program then at first machine code of this above program will come
+  in the "code section" of the memory and from there the program gets executed;
+> So next, when the program starts executing then it will execute the main function first so, an activation 
+  the record will be created for the main() function in the stack memory(Why in stack memory?)
+  (because the code section can directly use stack memory, not Heap memory so that's why.)
+  and inside the activation record of the main function, a variable 'n' of type integer will get its memory then a 
+  function call for fun1(n) will be placed then for a function call a new activation record will be created 
+  with the name of the function fun1() and there in the activation record of fun1() a variable 'n' will gets 
+  its memory and rest statements will get executed accordingly and for every function call a new activation 
+  record will be created.
