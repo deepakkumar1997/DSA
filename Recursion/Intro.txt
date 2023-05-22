@@ -23,3 +23,13 @@ void main(){
     int x=3;
     fun1(x);
 }
+
+> How statements work in recursion:
+
+void fun(int n){
+    if(n>0){
+        1. Statements before the recursive call will execute at the time of the function call // Ascending
+        2. fun(n-1)*2;
+        3> Statements after the recursive call will execute at the time of returning of function // Descending
+    }
+}
