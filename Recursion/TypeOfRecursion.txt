@@ -1,0 +1,145 @@
+>> Types of recursion:
+    > Tail Recursion
+    > Head Recursion
+    > Tree Recursion
+    > Indirect Recursion
+    > Nested Recursion
+
+>> Tail Recursion: If a recursive function is calling itself and that recursive call is the last statement of
+                  the function is then called tail recursion;
+
+Example:
+
+void fun(int n){
+    if(n>0){
+        printf("%d",n);
+        fun(n-1);// last statement of a function(recursive call)
+    }
+}
+// fun(5)
+
+> Convert tail recursion to a loop:
+
+    void fun(int n){
+        while(n>0){
+            printf("%d",n);
+            n--;
+        }
+    }
+
+> So in other words at returning time a recursive function should not perform any operation;
+> Tail recursion can easily be converted into a loop;
+> Time Complexity: O(n), Space Complexity: O(n) for tail recursion and O(1) for loop;
+> If you've to write a tail recursion then better you convert it into a loop that is more efficient in terms of 
+  space; and this will not be for every recursion and some compiler tries to convert tail recursion to a loop;
+
+
+>> Head Recursion: If a recursive function is calling itself and that recursive call is the first statement of 
+                   the function is then called tail recursion;
+Example:
+
+void fun(int n){
+    if(n>0){
+        fun(n-1);// if the first statement of a function is a recursive call then it is a head recursion;
+        printf("%d",n);
+    }
+}
+// fun(5);
+
+> Head recursions or if a recursive function has something to do at the time of returning then it can not be 
+  easily converted into the loops but it can be converted;
+
+> Convert head recursion to a loop:
+
+void fun(int n){
+    int i=0;
+    while(n>i){
+        i++;
+        printf("%d",i);
+    }
+}
+> So you can see, a head recursion can not easily be converted into a loop;
+
+
+>> Tree Recursion: A recursive function calling itself more than one time then it is called tree recursion;
+Example:
+
+void fun(n){
+    if(n>0){
+        fun(n-1);
+        .
+        .
+        .
+        fun(n-1);
+    }
+}
+
+
+> Linear Recursion: A function is calling itself one time then it is a linear recursion;
+Example: Tail and Head Recursions and can be others as well
+
+void fun(n){
+    if(n>0){
+        fun(n-1);
+    }
+}
+
+> Example of tree recursion:
+
+void fun(int n){
+    if(n>0){
+        printf("%d",n);
+        fun(n-1);
+        fun(n-1);
+    }
+}
+
+// fun(3); // It will create 15 activation records to execute the program;
+
+> Time Complexity of above function is O(2^n) and space complexity is O(n);
+
+
+>> Indirect Recursion: In indirect recursion, there may be more than one function and they are calling one 
+                       another in a circular fashion; So the first function calls the second one and 
+                       the second one calls the third one and so on until the last one calls the first one;
+
+Example:
+void A(int n){
+    if(cond...){
+        ...
+        B(n-1);
+    }
+}
+void B(int n){
+    if(cond...){
+        ...
+        A(n-2)
+    }
+}
+
+Example:
+void funA(int n){
+    if(n>0){
+        printf("%d",n);
+        funB(n-1);
+    }
+}
+void funB(int n){
+    if(n>1){
+        printf("%d",n);
+        funA(n/2);
+    }
+}
+
+>> Nested Recursion: In a nested recursion a recursive function will pass a parameter as a recursive call;
+
+Examples:
+
+int fun(int n){
+    if(n>100){
+        return n-10;
+    }
+    else return fun(fun(n+1));
+}
+
+// fun(95)
