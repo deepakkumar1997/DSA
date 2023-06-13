@@ -20,6 +20,7 @@ class FibonacciWithMemoization{
                 arr[n-2] = fibonacciWithMemoization(n-2);
             if(arr[n-1]==0)
                 arr[n-1] = fibonacciWithMemoization(n-1);
+            arr[n] = arr[n-2]+arr[n-1];
             return arr[n-2]+arr[n-1];
         }
     }
@@ -47,8 +48,8 @@ public class Fibonacci{
         FibonacciSeries fs = new FibonacciSeries();
         FibonacciWithMemoization fm = new FibonacciWithMemoization();
         FibonacciLoop fl = new FibonacciLoop();
-        System.out.println("For the value of n= "+n+", the value of Fibonacci number(Memo) is "+fm.fibonacciWithMemoization(n));
         System.out.println("For the value of n= "+n+", the value of Fibonacci number is "+fs.fibonacciSeries(n));
         System.out.println("For the value of n= "+n+", the value of Fibonacci number is "+fl.fibonacciLoop(n));
+        System.out.println("For the value of n= "+n+", the value of Fibonacci number(Memo) is "+fm.fibonacciWithMemoization(n));
     }
 }
