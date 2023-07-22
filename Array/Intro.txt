@@ -1,2 +1,2 @@
->> Array is collection of similar data elements and elements of an array is stored
+>> Array is a collection of similar data elements and elements of an array are stored
    in contiguous memory location;
