@@ -1,0 +1,18 @@
+BinarySearch Algorithm for a sorted array
+
+Algorithm BinarySearch(l, h, key){ 
+    while(l <= h){
+        mid = (l+h)/2 // mid will take floor value
+        if(key == Arr[mid])
+            return mid;
+        else if(key < A{mid})
+            h = mid-1;
+        else l = mid+1;
+    }
+}
+
+Where,
+l   = low(lowest index of sorted array)
+h   = high(highest index of sorted array)
+key = element to be searched
+mid = (l+h)/2 and mid will take floor value(because array index represented as an integer index)
