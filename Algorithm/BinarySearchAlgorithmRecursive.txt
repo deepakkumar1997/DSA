@@ -11,3 +11,5 @@ Algorithm RecursiveBinarySearch(l,h,key){
     }
     return -1;
 }
+
+The binary search algorithm takes TC = O(logN) to search an element;
