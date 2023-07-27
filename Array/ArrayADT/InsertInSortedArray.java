@@ -1,4 +1,5 @@
 // Take a sorted array and insert an element like array must be in sorted order
+// Insert an element in a sorted array such that resulting array remains sorted
 class InsertionInSortedArray{
     public boolean isSorted(int[] arr){
         for(int i=0; i<arr.length-1; ++i){
