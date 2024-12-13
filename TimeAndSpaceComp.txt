@@ -70,3 +70,26 @@ fun2(){
 What is the time complexity of fun1()?
 So fun2() will be called inside fun1() so tc for fun2() is O(n) and inside fun1() 
 fun2() is called so TC of fun1() is O(n);
+
+
+>> There are three ways to represent the time complexity:
+> We use Omega - Ω to represent the best case or casually we uses best case of big(O);
+> We use Theta - Θ to represent the average case or casually we uses avg case of big(O);
+> We use Omicron - O or Big O to represent the worst case Big-O;
+
+>> Time complexities from best to worst:
+> O(1) - Constant (Will execute the code for constant number of times)
+> log(n) - second best time complexity. (Divide and Conquer)
+Example: To get a number from a sorted array of 8 elements we need 3 steps to get that 
+         by divide them into half(No. of elements).
+         So, 2 raised to the third power = 8 
+         Or, log base 2 of 8 = 3, means 3 step to find a number in an array dividing by half.
+         so finding a number from an array of n numbers can be done in O(log n) time complexity.
+         
+> O(n) - Linear time complexity. like a loop. (Proportional)
+> O(nlog n) - some sorting algorithms, quick and merge sort
+> O(n^2) - Big O of n square, like a loop inside another loop of n numbers. Loop within a loop.
+> and so on....
+
+>> Plain english explanation of big O https://stackoverflow.com/questions/487258/what-is-a-plain-english-explanation-of-big-o-notation
+>> https://www.bigocheatsheet.com/
