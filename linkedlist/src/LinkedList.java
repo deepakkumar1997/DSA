@@ -36,7 +36,7 @@ public class LinkedList {
     public void printList(){
         Node temp = head;
         while (temp != null){
-            System.out.println(temp.value);
+            System.out.print(temp.value+" ");
             temp = temp.next;
         }
     }
@@ -134,5 +134,96 @@ public class LinkedList {
             tail = null;
         }
         return temp;
+    }
+
+    // get a node at particular index
+//    public Node get(int index){
+//        if(length == 0) return null;
+//        Node temp = head;
+//        for(int i=0; i < index; ++i){
+//            temp = temp.next;
+//        }
+//        return temp;
+//    }
+
+    public Node get(int index){
+        if(index < 0 || index >= length) return null;
+        Node temp = head;
+        for(int i = 0; i < index; ++i){
+            temp = temp.next;
+        }
+        return temp;
+    }
+
+    // updating/setting value at particular index
+    public boolean set(int index, int value){
+        Node temp = get(index);
+        if(temp != null){
+            temp.value = value;
+            return true;
+        }
+        return false;
+    }
+
+    // inserting/adding value at a particular index
+//    public boolean insert(int index, int value){
+//        Node newNode = new Node(value);
+//        if (index > 0 && length == 0 || index < 0 || index > length) return false;
+//        else if(index == 0 && length == 0){
+//            head = newNode;
+//            tail = newNode;
+//            length++;
+//        } else if (index == 0) {
+//            prepend(value);
+//        } else if (index == length) {
+//            append(value);
+//        } else {
+//            Node temp = head;
+//            Node preTemp = head;
+//            for(int i=0; i < index; ++i){
+//                preTemp = temp;
+//                temp = temp.next;
+//            }
+//            preTemp.next = newNode;
+//            newNode.next = temp;
+//            length++;
+//        }
+//        return true;
+//    }
+
+    public boolean insert(int index, int value){
+        if(index < 0 || index > length) return false;
+        if(index == 0){
+            prepend(value);
+            return true;
+        }
+        if(index == length){
+            append(value);
+            return true;
+        }
+        Node newNode = new Node(value);
+        Node temp = get(index-1);
+        newNode.next = temp.next;
+        temp.next = newNode;
+        length++;
+        return true;
+    }
+
+    public boolean remove(int index){
+        if(index < 0 || index >= length) return false;
+        if(index == 0){
+            removeFirst();
+            return true;
+        }
+        if(index == length-1){
+            removeLast();
+            return true;
+        }
+        Node temp = get(index-1);
+        Node postTemp = get(index);
+        temp.next = postTemp.next;
+        postTemp.next = null;
+        length--;
+        return true;
     }
 }
