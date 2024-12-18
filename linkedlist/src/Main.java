@@ -41,14 +41,14 @@ public class Main {
 //        System.out.println(linkedList.set(6, 6));
 
         // remove a node at a particular index
-//        System.out.println(linkedList.remove(0));
+//        System.out.println(linkedList.remove(0).value);
 //        System.out.println(linkedList.remove(-1));
-//        System.out.println(linkedList.remove(5));
-//        System.out.println(linkedList.remove(4));
-//        System.out.println(linkedList.remove(1));
+//        System.out.println(linkedList.remove(4).value);
+//        System.out.println(linkedList.remove(1).value);
 
 //        System.out.println("Head: " + linkedList.getHead().value);
 //        System.out.println("Tail: " + linkedList.getTail().value);
+//        linkedList.reverseList();
         System.out.println("Length: " + linkedList.getLength());
         System.out.print("List: ");
         linkedList.printList();

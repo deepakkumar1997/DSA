@@ -209,21 +209,49 @@ public class LinkedList {
         return true;
     }
 
-    public boolean remove(int index){
-        if(index < 0 || index >= length) return false;
-        if(index == 0){
-            removeFirst();
-            return true;
-        }
-        if(index == length-1){
-            removeLast();
-            return true;
-        }
-        Node temp = get(index-1);
-        Node postTemp = get(index);
-        temp.next = postTemp.next;
-        postTemp.next = null;
+//    public boolean remove(int index){
+//        if(index < 0 || index >= length) return false;
+//        if(index == 0){
+//            removeFirst();
+//            return true;
+//        }
+//        if(index == length-1){
+//            removeLast();
+//            return true;
+//        }
+//        Node temp = get(index-1);
+//        Node postTemp = get(index);
+//        temp.next = postTemp.next;
+//        postTemp.next = null;
+//        length--;
+//        return true;
+//    }
+    public Node remove(int index){
+        if(index < 0 || index >= length) return null;
+        if(index == 0) return removeFirst();
+        if(index == length - 1) return removeLast();
+
+        Node prev = get(index-1);
+        Node temp = prev.next;
+
+        prev.next = temp.next;
+        temp.next = null;
         length--;
-        return true;
+        return temp;
+    }
+
+    // reverse the linked list
+    public void reverseList(){
+        Node temp = head;
+        head = tail;
+        tail = temp;
+        Node after = temp.next;
+        Node before = null;
+        for(int i=0; i < length; ++i){
+            after = temp.next;
+            temp.next = before;
+            before = temp;
+            temp = after;
+        }
     }
 }
